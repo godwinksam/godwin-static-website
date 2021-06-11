@@ -35,6 +35,19 @@
 	}
 </style>
 <body>
+	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/60c35b5b65b7290ac6357254/1f7thpnur';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
 	<header class="header-color" style="position: fixed; width:100%; z-index:1">
 		<div class="row text-white">
 			<div class ="col-xs-6 col-sm-6 col-md-6 p-3 pl-5">
@@ -157,15 +170,19 @@
 			<h1 class="text-center text-color">Contact </h1>
 			<div class="row">
 				<div class=" col-sm-12 col-md-12">
-					<form class="text-color">
+					<form class="text-color" type="post" action="">
+					<div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Name</label>
+					    <input type="text" class="form-control" name="contact_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+					  </div>		
 					  <div class="mb-3">
 					    <label for="exampleInputEmail1" class="form-label">Email address</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					    <input type="email" class="form-control" name="contact_email" id="exampleInputEmail1" aria-describedby="emailHelp">
 					    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 					  </div>
 					  <div class="mb-3">
 					    <label for="exampleInputPassword1" class="form-label">Message</label>
-					    <textarea class="form-control" id="exampleInputPassword1"></textarea>
+					    <textarea class="form-control" name="contact_message" id="exampleInputPassword1"></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
 					</form>
