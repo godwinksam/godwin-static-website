@@ -7,49 +7,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style type="text/css">
-
+	@font-face{ 
+		src: url(fonts/RedHatDisplay-VariableFont_wght.ttf);
+		font-family: RedHatDisplay;
+	}
+	@font-face{
+		src: url(fonts/RedHatDisplay-Bold.ttf);
+		font-family: RedHatDisplay-Bold;
+	}
+	h1,h2,h3,h5{
+		font-family: RedHatDisplay-Bold;
+	}
 	html,body{
 	    width:100%;
 	    overflow-x:hidden;
+		font-family:RedHatDisplay;
   	}
   	html {
 	  scroll-behavior: smooth;
 	}
 	.header-color{
-		background-color: #254E56;
+		/* background-color: #254E56; */
+		background-color: #ffffff;
+	}
+	.footer-color{
+		background-color: #212527;
 	}
 	.body-color{
 		color: #88BDBC
 	}
+	#home-section{
+		background-image: url(img/banner-img-new.jpg);
+	}
 	.section-color{
-		background-color:#88BDBC;
+		/* background-color:#88BDBC; */
+		background-color:#ffffff;
 	}
 	.text-color{
-		color:#254E56;
+		/* color:#254E56; */
+		color:#173b47;
 	}
 	.section-color2{
-		background-color: #6E6658;
+		/* background-color: #6E6658; */
+		background-color: #f5f7f6;
 	}
 	.section-color3{
-		background-color: #4F4A41;
+		/* background-color: #4F4A41; */
+		background-color:#173b47;
 	}
 </style>
 <body>
 	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-	s1.async=true;
-	s1.src='https://embed.tawk.to/60c35b5b65b7290ac6357254/1f7thpnur';
-	s1.charset='UTF-8';
-	s1.setAttribute('crossorigin','*');
-	s0.parentNode.insertBefore(s1,s0);
-	})();
+	<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/60c35b5b65b7290ac6357254/1f7thpnur';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
 	</script>
 	<!--End of Tawk.to Script-->
 	<header class="header-color" style="position: fixed; width:100%; z-index:1">
-		<div class="row text-white">
+		<div class="row text-color">
 			<div class ="col-8 col-md-6 p-3 pl-5">
 				<h2>Godwin Sam</h2>
 			</div>
@@ -63,16 +85,16 @@
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				    <ul class="navbar-nav ml-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link text-white" href="#home-section">Home <span class="sr-only">(current)</span></a>
+				        <a class="nav-link text-color" href="#home-section">Home <span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link text-white" href="#services-section">Services</a>
+				        <a class="nav-link text-color" href="#services-section">Services</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link text-white" href="#experience-section">Experience</a>
+				        <a class="nav-link text-color" href="#experience-section">Experience</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link text-white" href="#contact-section">Contact me</a>
+				        <a class="nav-link text-color" href="#contact-section">Contact me</a>
 				      </li>
 				    </ul>
 
@@ -85,10 +107,10 @@
 		<div class="container pb-5" style="padding-top:10rem;">
 			<div class="row pt-5 pb-5 align-items-center " >
 				<div class="col-xs-12 col-sm-12 col-md-6 d-flex justify-content-around">
-					<img src="https://scontent.fcok11-1.fna.fbcdn.net/v/t1.6435-9/95134738_2570213599860009_6952807803111079936_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=RP_LWGbBMhMAX_hqGZm&_nc_ht=scontent.fcok11-1.fna&oh=266a29c5b501392852433aea9f35c0ad&oe=61387378" alt="" class="rounded-circle p-5">
+					<!-- <img src="https://scontent.fcok11-1.fna.fbcdn.net/v/t1.6435-9/95134738_2570213599860009_6952807803111079936_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=RP_LWGbBMhMAX_hqGZm&_nc_ht=scontent.fcok11-1.fna&oh=266a29c5b501392852433aea9f35c0ad&oe=61387378" alt="" class="rounded-circle p-5"> -->
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 text-color">
-					<h3>Junior Software Developer</h3>
+				<div class="col-xs-12 col-sm-12 col-md-6 pt-5 pb-5 text-white">
+					<h3>Software Developer</h3>
 					<h5>10 months of experience in software development</h5>
 					<blockquote>
 						<p>"Learn new things everyday"</p>
@@ -100,7 +122,7 @@
 	</section>
 	<section class ="section-color2" id="services-section">
 		<div class="container  pb-5" style="padding-top:7rem;">
-			<h1 class="text-center text-white pb-2">Services</h1>
+			<h1 class="text-center text-color pb-2">Services</h1>
 			<div class="row mt-4">
 				<div class="col-xs-12 col-sm-12 col-md-6 d-flex justify-content-around mt-4">
 					<div class="card text-center pt-3" style="width: 22rem;">
@@ -165,7 +187,7 @@
 		</div>
 		
 	</section>
-	<section class="section-color" id="contact-section">
+	<section class="section-color2" id="contact-section">
 		<div class="container pb-5" style="padding-top:7rem;">
 			<h1 class="text-center text-color">Contact </h1>
 			<div class="row">
@@ -190,7 +212,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="header-color">
+	<footer class="footer-color">
 		<div class="container">
 			<div class="row text-white text-center">
 				<div class="col-xs-12 col-sm-12 col-md-12">
