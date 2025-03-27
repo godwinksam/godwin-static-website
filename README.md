@@ -1,2 +1,2 @@
 # godwin-static-website
-my personal website
+My Personal Website
